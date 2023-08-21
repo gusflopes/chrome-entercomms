@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Registro de Páginas da Hublaw",
+  "version": "1.0",
+  "description": "Registro de todas as páginas visitadas",
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs", "storage", "webRequest"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Popup da Extensão</title>
+  <style>
+    body {
+      width: 600px;
+    }
+    #visitedPages {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="toggleExtension">Ativar Extensão</button>
+  <button id="showVisitedPages">Mostrar Páginas Visitadas</button>
+  <button id="clearVisitedPages">Limpar Páginas Visitadas</button>
+  <table id="visitedPages">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>URL</th>
+        <th>Is Duplicate</th>
+        <th>Original URL</th>
+        <th>Original ID</th>
+      </tr>
+    </thead>
+    <tbody id="pageList">
+      <!-- As páginas visitadas serão inseridas aqui -->
+    </tbody>
+  </table>
+  <script src="popup.js"></script>
+</body>
+</html>
