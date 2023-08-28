@@ -96,8 +96,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 });
 
 
-
-
 function latin1ToUtf8(input) {
   const latin1Encoded = new Uint8Array(input.length);
   for (let i = 0; i < input.length; i++) {
